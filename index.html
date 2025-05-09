@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+
+  <body>
+    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" maxTrack: 2 color-space="sRGB"
+      renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
+      device-orientation-permission-ui="enabled: false">
+      <a-assets>
+        <!--Gallery views-->
+        <img id="gallery1" src="./assets/art/galleryDob.png" />
+        <img id="gallery2" src="./assets/art/galleryWesselenyi.png" />
+
+        <!--Street arts-->
+        <img id="card1" src="./assets/art/gh2.png" />
+        <img id="card2" src="./assets/art/he3.png" />
+        <img id="card3" src="./assets/art/gyk3.png" />
+        <img id="card4" src="./assets/art/on1.png" />
+        <img id="card5" src="./assets/art/gyk4.png" />
+        <img id="card6" src="./assets/art/on3.png" />
+
+        <img id="card7" src="./assets/art/he2.png" />
+        <img id="card8" src="./assets/art/on2.png" />
+        <img id="card9" src="./assets/art/gyk1.png" />
+        <img id="card10" src="./assets/art/gh1.png" />
+        <img id="card11" src="./assets/art/he1.png" />
+        <img id="card11" src="./assets/art/gyk2.png" />
+        
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <!--Gallery view on street name signs-->
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-plane src="#gallery1" position="0 0 0" height="2.16" width="1.5" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7">
+        <a-plane src="#gallery2" position="0 0 0" height="2.16" width="1.5" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+
+
+      <!--Street art on house numbers-->
+      
+      <a-entity mindar-image-target="targetIndex: 1">
+        <a-plane src="#card1" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2">
+        <a-plane src="#card2" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3">
+        <a-plane src="#card3" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4">
+        <a-plane src="#card4" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5">
+        <a-plane src="#card5" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6">
+        <a-plane src="#card6" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      
+      <a-entity mindar-image-target="targetIndex: 8">
+        <a-plane src="#card7" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9">
+        <a-plane src="#card8" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 10">
+        <a-plane src="#card9" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 11">
+        <a-plane src="#card10" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 12">
+        <a-plane src="#card11" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 13">
+        <a-plane src="#card12" position="0 0 0" height="1.44" width="1" rotation="0 0 0" transparent="true"></a-plane>
+      </a-entity>
+     
+      
+
+
+    </a-scene>
+
+    <div style="position: fixed; bottom: 20px; width: 100%; text-align: center; z-index: 999;">
+      <a href="https://www.figma.com/proto/SyXPezkBcPu1Ss9TUzW4yD?node-id=105-112&starting-point-node-id=105:112&locale=en" 
+         style="background-color: #A5FF2E; color: #050038; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-family: sans-serif; font-size: 16px; font-weight: bold;">
+        Back
+      </a>
+    </div>
+    
+  </body>
+</html>
